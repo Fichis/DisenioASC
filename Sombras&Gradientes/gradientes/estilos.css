@@ -1,0 +1,90 @@
+h2 {
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to bottom, #5a158c, #4b0082 40%, #ff69b4);
+    background-clip: text;
+}
+
+.d1 {
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+    background: linear-gradient(to right, #000, blue, yellow, green, red);
+}
+
+.d2 {
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+    background: repeating-linear-gradient(to bottom, blue 0% 10%, yellow 10% 20%, red 20% 30%);
+}
+
+.d3 {
+    margin: 20px auto;
+    width: 30%;
+    height: 200px;
+    background: radial-gradient(yellow, orange 10%, red 50%, black);
+}
+
+.d4 {
+    margin: 20px auto;
+    width: 30%;
+    height: 200px;
+    background: radial-gradient(yellow 0% 50%, red 55%, black 75%);
+}
+
+.d5 {
+    margin: 20px auto;
+    width: 30%;
+    height: 200px;
+    background: radial-gradient(circle, yellow 0% 50%, red 55%, black 75%);
+}
+
+.d6 {
+    margin: 20px auto;
+    width: 30%;
+    height: 200px;
+    background: radial-gradient(circle at left, yellow 0% 60%, red 65%, black 95%);
+}
+
+.d7 {
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+    background: radial-gradient(circle, blue, red 40%, yellow 75%);
+}
+
+.d8 {
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+    background: radial-gradient(blue, red 30%, yellow 60%);
+}
+
+.d9 {
+    margin: 20px auto;
+    width: 70%;
+    height: 200px;
+    background: radial-gradient(circle, blue, red, yellow);
+}
+
+.d10 {
+    margin: 20px auto;
+    width: 50%;
+    height: 525px;
+    background: repeating-radial-gradient(circle, #ff4444 0% 10%, #ff0000 10% 20%, #8b0000 20% 30%);
+}
+
+.d11 {
+    margin: 20px auto;
+    width: 50%;
+    height: 525px;
+    background: conic-gradient(at top, blue, black);
+}
+
+.d12 {
+    margin: 20px auto;
+    width: 50%;
+    height: 525px;
+    background: repeating-conic-gradient(yellow, red 24deg 36deg, blue 36deg, yellow 72deg);
+}
