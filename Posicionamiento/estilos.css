@@ -124,7 +124,7 @@ footer {
 
 footer div {
     display: inline-block;
-    
+    font-size: larger;
 }
 
 footer div:last-child {
