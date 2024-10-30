@@ -124,17 +124,16 @@ footer {
 
 footer div {
     display: inline-block;
-    font-size: larger;
 }
 
 footer div:last-child {
     float: right;
-    
 }
 
 footer div a {
     color: #00a3ff;
     text-decoration: none;
+    font-size: larger;
 }
 
 footer div:first-child::before {
