@@ -1,0 +1,9 @@
+p{
+    position: sticky;
+    top: 0;
+    background-color: #e1f4fc;
+    padding: 1em;
+}
+ul, ol {
+    list-style-type: none;
+}

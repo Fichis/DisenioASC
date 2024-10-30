@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #edeeee;
+    color: orange;
+    text-align: center;
+    border-bottom: 3px solid #31a335;
+}
+
+header h1 {
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li a {
+    background-color: #30a6e6;
+    color: white;
+    display: block;
+    font: 18px sans-serif;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav>ul>li {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+nav li:hover a {
+    background-color: black;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+nav li ul li a:hover {
+    background-color: #df4b05;
+    color: white;
+}
+
+nav li:hover>ul {
+    display: block;
+}
+
+.links {
+    clear: both;
+    float: left;
+    width: 10%;
+    overflow: auto;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    padding: 0.2em;
+    color: black;
+    text-align: center;
+    border: 1px solid #ffc83d;
+    background-color: #e5f3fe;
+}
+
+.links a:hover {
+    background-color: #f1f9ff;
+    box-shadow: 0 0 4px #ccc inset;
+}
+
+.links a::before {
+    content: "👉 ";
+}
+
+.galeria {
+    clear: both;
+}
+
+.galeria h2 {
+    background-color: #edeeee;
+    color: orange;
+    text-align: center;
+    border-bottom: 3px solid #31a335;
+    padding: 1em;
+}
+
+.galeria article {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.galeria article img {
+    display: inline-block;
+    padding: 20px;
+}
+
+.galeria article img:hover {
+    background-color: #eee;
+    box-shadow: 0 0 4px inset gray;
+    border-radius: 1.5em;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer div {
+    display: inline-block;
+    
+}
+
+footer div:last-child {
+    float: right;
+    
+}
+
+footer div a {
+    color: #00a3ff;
+    text-decoration: none;
+}
+
+footer div:first-child::before {
+    content: "« ";
+    color: #00a3ff;
+}
+
+footer div:last-child::after {
+    content: " »";
+    color: #00a3ff;
+}
+
+footer div a:hover {
+    color: #006196;
+    text-decoration: underline;
+}
