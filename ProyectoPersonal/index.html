@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Personal | Adolfo</title>
+    <link rel="shortcut icon" href="./assets/img/valoria.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/valoria.ico" alt="Logo" title="Valoria-Logo" />
+        <h1>Valoria mmorpg</h1>
+    </header>
+    <main>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-scroll"></i>Rules</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i>Manual</a></li>
+                <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
+                <li><a href="#"><i class="fa-solid fa-wand-sparkles"></i>Spells</a></li>
+                <li><a href="#"><i class="fa-solid fa-shield-halved"></i>Items</a></li>
+                <li><a href="#"><i class="fa-solid fa-dragon"></i>Bestiary</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <section class="gettingStarted">
+            <article class="gettingStarted__welcome">
+                <h2 class="gettingStarted__welcome__title">Getting Started</h2>
+                <p>
+                    Valoria MMO is a massive multiplayer online role play game where
+                    thousand of players meets each others in the whole world of Valoria.
+                </p>
+                <p>
+                    Discover unique areas to explore.
+                </p>
+                <p>
+                    Hunt incredible and strong
+                    creatures.
+                </p>
+                <p>
+                    Find mysterious chest among the world.
+                </p>
+                <p>
+                    Meet other players.
+                </p>
+                <p>
+                    Perform party with players to help you in your journey.
+                </p>
+                <p>
+                    Train your abilities such as magic, distance, melee or shielding.
+                </p>
+                <p>
+                    Dominate the rank list.
+                </p>
+                <p>
+                    Build the best equipment.
+                </p>
+                <p>
+                    Collect more than 100 unique items.
+                </p>
+                <p>
+                    Valoria is on a earlier stage with a powerful
+                    engine behind and we are doing a lot of progress to become the best
+                    mmo ever.
+                </p>
+            </article>
+        </section>
+
+        <section class="miscellaneous">
+            <h2 class="miscellaneous__title">Miscellaneous</h2>
+            <div class="miscellaneous__container">
+                <article class="miscellaneous__container__spells">
+                    <h3 class="miscellaneous__container__spells__title">Some Spells Preview</h3>
+                    <table id="paladin" class="spells hidden">
+                        <caption>Paladin Spells</caption>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>ML Required</th>
+                                <th>Mana</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ? Cargo las filas desde javascript -->
+                        </tbody>
+                    </table>    
+                </article>
+                <article class="miscellaneous__container__items">
+                    <h3 class="miscellaneous__container__items__title">Some Equip Preview</h3>
+                    <table id="helmets">
+                        <caption>Helmets</caption>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Level Required</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ? Cargo las filas desde javascript -->
+                        </tbody>
+                    </table>
+                    <h3 class="miscellaneous__container__items__title">Some Equip Preview</h3>
+                    <table id="rings">
+                        <caption>Rings</caption>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Level Required</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- ? Cargo las filas desde javascript -->
+                        </tbody>
+                    </table>
+                </article>
+                <article class="miscellaneous__container__bestiary">
+                    <h3 class="miscellaneous__container__bestiary__title">Some Monsters Preview</h3>
+                    <table id="mob-low" class="mobs hidden">
+                        <caption>Low Monsters</caption>
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Health Points</th>
+                                <th>Location</th>
+                                <th>Experience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+        <section class="gallery">
+                <h2 class="gallery__title">Gallery</h2>
+                <article class="gallery__slideshow-container">
+                    <div class="gallery__slideshow-container__prev-container" onclick="plusSlides(-1)">
+                        <p>❮</p>
+                    </div>
+                    <div class="gallery__container">
+                        <div class="gallery__container__mySlides fade">
+                            <img src="./assets/img/gallery/1.png">
+                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
+                        </div>
+        
+                        <div class="gallery__container__mySlides fade">
+                            <img src="./assets/img/gallery/2.png">
+                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
+                        </div>
+        
+                        <div class="gallery__container__mySlides fade">
+                            <img src="./assets/img/gallery/3.png">
+                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
+                        </div>
+                        <div class="gallery__container__mySlides fade">
+                            <img src="./assets/img/gallery/4.png">
+                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
+                        </div>
+                    </div>
+        
+                    <div class="gallery__slideshow-container__next-container" onclick="plusSlides(1)">
+                        <p>❯</p>
+                    </div>
+                </article>
+                <br>
+                <article>
+                    <span class="gallery__dot" onclick="currentSlide(1)"></span>
+                    <span class="gallery__dot" onclick="currentSlide(2)"></span>
+                    <span class="gallery__dot" onclick="currentSlide(3)"></span>
+                    <span class="gallery__dot" onclick="currentSlide(4)"></span>
+                </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Valoria ©2024
+        </p>
+        <p>
+            <a href="#">
+                Terms and use
+            </a>
+        </p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/spells.js"></script>
+    <script src="./assets/js/items.js"></script>
+    <script src="./assets/js/mobs.js"></script>
+</body>
+
+</html>
