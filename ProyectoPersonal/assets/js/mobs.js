@@ -460,6 +460,56 @@ monsterList.forEach((monster) => {
   }
 });
 
+const lowMobileContainer = document.getElementById("mob-low1");
+
+monsterList.forEach((monster) => {
+  if (monster.category === categoriaMob[0]) {
+    const fila = document.createElement("div");
+    fila.className = "fila";
+
+    const columns = [
+      "Image",
+      "Name",
+      "Health Points",
+      "Location",
+      "Experience",
+    ];
+    const values = [
+      monster.image,
+      monster.name,
+      monster.hp,
+      monster.location,
+      monster.experience,
+    ];
+
+    columns.forEach((header, index) => {
+      const columna = document.createElement("div");
+      columna.className = "columna";
+
+      const headerDiv = document.createElement("div");
+      headerDiv.className = "header";
+      headerDiv.textContent = header;
+
+      const contenidoDiv = document.createElement("div");
+      contenidoDiv.className = "contenido";
+      if (header === "Image") {
+        const img = document.createElement("img");
+        img.src = values[index];
+        img.alt = monster.name;
+        contenidoDiv.appendChild(img);
+      } else {
+        contenidoDiv.textContent = values[index];
+      }
+
+      columna.appendChild(headerDiv);
+      columna.appendChild(contenidoDiv);
+      fila.appendChild(columna);
+    });
+
+    lowMobileContainer.appendChild(fila);
+  }
+});
+
 /* const lowMobileContainer = document.getElementById("mob-low1");
 
 monsterList.forEach((monster) => {

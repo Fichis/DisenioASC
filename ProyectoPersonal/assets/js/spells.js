@@ -428,7 +428,7 @@ spellList.forEach((spell) => {
   }
 });
 
-/* const paladinMobileContainer = document.getElementById("paladin1");
+const paladinMobileContainer = document.getElementById("paladin1");
 
 spellList.forEach((spell) => {
   if (spell.category === categoria[1]) {
@@ -462,7 +462,7 @@ spellList.forEach((spell) => {
 
     paladinMobileContainer.appendChild(fila);
   }
-}); */
+});
 
 /* const sorcererTable = document
   .getElementById("sorcerer")

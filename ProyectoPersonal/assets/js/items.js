@@ -1085,6 +1085,50 @@ itemList.forEach((item) => {
   }
 });
 
+const helmetsMobileContainer = document.getElementById("helmets1");
+
+itemList.forEach((item) => {
+  if (item.category === categoriaItem[0]) {
+    const fila = document.createElement("div");
+    fila.className = "fila";
+
+    const columns = ["Image", "Name", "Level Required", "Value", "Description"];
+    const values = [
+      item.image,
+      item.name,
+      item.levelRequired,
+      item.value,
+      item.description,
+    ];
+
+    columns.forEach((header, index) => {
+      const columna = document.createElement("div");
+      columna.className = "columna";
+
+      const headerDiv = document.createElement("div");
+      headerDiv.className = "header";
+      headerDiv.textContent = header;
+
+      const contenidoDiv = document.createElement("div");
+      contenidoDiv.className = "contenido";
+      if (header === "Image") {
+        const img = document.createElement("img");
+        img.src = values[index];
+        img.alt = item.name;
+        contenidoDiv.appendChild(img);
+      } else {
+        contenidoDiv.textContent = values[index];
+      }
+
+      columna.appendChild(headerDiv);
+      columna.appendChild(contenidoDiv);
+      fila.appendChild(columna);
+    });
+
+    helmetsMobileContainer.appendChild(fila);
+  }
+});
+
 const ringsTable = document
   .getElementById("rings")
   .getElementsByTagName("tbody")[0];
@@ -1117,6 +1161,51 @@ itemList.forEach((item) => {
     row.appendChild(descCell);
 
     ringsTable.appendChild(row);
+  }
+});
+
+
+const ringsMobileContainer = document.getElementById("rings1");
+
+itemList.forEach((item) => {
+  if (item.category === categoriaItem[7]) {
+    const fila = document.createElement("div");
+    fila.className = "fila";
+
+    const columns = ["Image", "Name", "Level Required", "Value", "Description"];
+    const values = [
+      item.image,
+      item.name,
+      item.levelRequired,
+      item.value,
+      item.description,
+    ];
+
+    columns.forEach((header, index) => {
+      const columna = document.createElement("div");
+      columna.className = "columna";
+
+      const headerDiv = document.createElement("div");
+      headerDiv.className = "header";
+      headerDiv.textContent = header;
+
+      const contenidoDiv = document.createElement("div");
+      contenidoDiv.className = "contenido";
+      if (header === "Image") {
+        const img = document.createElement("img");
+        img.src = values[index];
+        img.alt = item.name;
+        contenidoDiv.appendChild(img);
+      } else {
+        contenidoDiv.textContent = values[index];
+      }
+
+      columna.appendChild(headerDiv);
+      columna.appendChild(contenidoDiv);
+      fila.appendChild(columna);
+    });
+
+    ringsMobileContainer.appendChild(fila);
   }
 });
 

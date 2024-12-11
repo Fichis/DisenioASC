@@ -77,7 +77,7 @@
             <div class="miscellaneous__container">
                 <article class="miscellaneous__container__spells">
                     <h3 class="miscellaneous__container__spells__title">Some Spells Preview</h3>
-                    <table id="paladin" class="spells hidden">
+                    <table id="paladin" class="table-desktop">
                         <caption>Paladin Spells</caption>
                         <thead>
                             <tr>
@@ -90,11 +90,14 @@
                         <tbody>
                             <!-- ? Cargo las filas desde javascript -->
                         </tbody>
-                    </table>    
+                    </table>
+                    <div id="paladin1" class="table-mobile">
+
+                    </div>
                 </article>
                 <article class="miscellaneous__container__items">
                     <h3 class="miscellaneous__container__items__title">Some Equip Preview</h3>
-                    <table id="helmets">
+                    <table id="helmets" class="table-desktop">
                         <caption>Helmets</caption>
                         <thead>
                             <tr>
@@ -109,8 +112,11 @@
                             <!-- ? Cargo las filas desde javascript -->
                         </tbody>
                     </table>
+                    <div id="helmets1" class="table-mobile">
+
+                    </div>
                     <h3 class="miscellaneous__container__items__title">Some Equip Preview</h3>
-                    <table id="rings">
+                    <table id="rings" class="table-desktop">
                         <caption>Rings</caption>
                         <thead>
                             <tr>
@@ -125,10 +131,13 @@
                             <!-- ? Cargo las filas desde javascript -->
                         </tbody>
                     </table>
+                    <div id="rings1" class="table-mobile">
+
+                    </div>
                 </article>
                 <article class="miscellaneous__container__bestiary">
                     <h3 class="miscellaneous__container__bestiary__title">Some Monsters Preview</h3>
-                    <table id="mob-low" class="mobs hidden">
+                    <table id="mob-low" class="table-desktop">
                         <caption>Low Monsters</caption>
                         <thead>
                             <tr>
@@ -140,50 +149,53 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+
                         </tbody>
                     </table>
+                    <div id="mob-low1" class="table-mobile">
+
+                    </div>
                 </article>
             </div>
         </section>
         <section class="gallery">
-                <h2 class="gallery__title">Gallery</h2>
-                <article class="gallery__slideshow-container">
-                    <div class="gallery__slideshow-container__prev-container" onclick="plusSlides(-1)">
-                        <p>❮</p>
+            <h2 class="gallery__title">Gallery</h2>
+            <article class="gallery__slideshow-container">
+                <div class="gallery__slideshow-container__prev-container" onclick="plusSlides(-1)">
+                    <p>❮</p>
+                </div>
+                <div class="gallery__container">
+                    <div class="gallery__container__mySlides fade">
+                        <img src="./assets/img/gallery/1.png">
+                        <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
                     </div>
-                    <div class="gallery__container">
-                        <div class="gallery__container__mySlides fade">
-                            <img src="./assets/img/gallery/1.png">
-                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
-                        </div>
-        
-                        <div class="gallery__container__mySlides fade">
-                            <img src="./assets/img/gallery/2.png">
-                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
-                        </div>
-        
-                        <div class="gallery__container__mySlides fade">
-                            <img src="./assets/img/gallery/3.png">
-                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
-                        </div>
-                        <div class="gallery__container__mySlides fade">
-                            <img src="./assets/img/gallery/4.png">
-                            <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
-                        </div>
+
+                    <div class="gallery__container__mySlides fade">
+                        <img src="./assets/img/gallery/2.png">
+                        <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
                     </div>
-        
-                    <div class="gallery__slideshow-container__next-container" onclick="plusSlides(1)">
-                        <p>❯</p>
+
+                    <div class="gallery__container__mySlides fade">
+                        <img src="./assets/img/gallery/3.png">
+                        <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
                     </div>
-                </article>
-                <br>
-                <article>
-                    <span class="gallery__dot" onclick="currentSlide(1)"></span>
-                    <span class="gallery__dot" onclick="currentSlide(2)"></span>
-                    <span class="gallery__dot" onclick="currentSlide(3)"></span>
-                    <span class="gallery__dot" onclick="currentSlide(4)"></span>
-                </article>
+                    <div class="gallery__container__mySlides fade">
+                        <img src="./assets/img/gallery/4.png">
+                        <div class="gallery_container__mySlides__text">Valoria's Gallery</div>
+                    </div>
+                </div>
+
+                <div class="gallery__slideshow-container__next-container" onclick="plusSlides(1)">
+                    <p>❯</p>
+                </div>
+            </article>
+            <br>
+            <article>
+                <span class="gallery__dot" onclick="currentSlide(1)"></span>
+                <span class="gallery__dot" onclick="currentSlide(2)"></span>
+                <span class="gallery__dot" onclick="currentSlide(3)"></span>
+                <span class="gallery__dot" onclick="currentSlide(4)"></span>
+            </article>
         </section>
     </main>
 

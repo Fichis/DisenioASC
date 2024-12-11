@@ -428,3 +428,79 @@ footer a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.table-mobile {
+    display: none;
+    visibility: hidden;
+}
+
+.table-mobile .fila .columna {
+    display: flex;
+}
+
+.table-mobile .fila .columna .header,
+.table-mobile .fila .columna .contenido{
+    border: 1px solid var(--bg-dark);
+    border-bottom: none;
+    padding: 0.5em;
+}
+
+.table-mobile .fila .columna .header {
+    min-width: 45%;
+    font-weight: bold;
+}
+
+.table-mobile .fila {
+    transition: 1s;
+}
+
+.table-mobile .fila .columna .contenido {
+    min-width: 55%;
+    text-align: center;
+    transition: 1s;
+}
+
+.table-mobile .fila .columna .contenido img {
+    width: 20%;
+}
+
+.table-mobile .fila .columna .contenido a img {
+    width: 45px;
+}
+
+.table-mobile .fila:nth-of-type(even) .columna .contenido {
+    background-color: var(--secondary-color);
+}
+
+.table-mobile .fila:nth-of-type(odd) .columna .contenido {
+    background-color: var(--bg-main);
+}
+
+.table-mobile .fila .columna:last-of-type .header,
+.table-mobile .fila .columna:last-of-type .contenido {
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 1300px) {
+
+    .miscellaneous__container {
+        flex-flow: column wrap;
+    }
+
+    .miscellaneous .miscellaneous__container__bestiary,
+    .miscellaneous .miscellaneous__container__items,
+    .miscellaneous .miscellaneous__container__spells {
+        width: 100%;
+    }
+
+    .table-mobile {
+        display: block;
+        width: 100%;
+        visibility: visible;
+    }
+
+    .table-desktop {
+        display: none;
+        visibility: hidden;
+    }
+}
