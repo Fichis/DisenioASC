@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section article {
+    display: inline-block;
+    color: white;
+    padding: 0.5em;
+    background-color: steelblue;
+    overflow: hidden;
+}
+
+main section article:nth-child(1) {
+    position: relative;
+    transition: all 2s;
+}
+
+main section article:nth-child(1)::after {
+    content: "W";
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+main section:hover article:nth-child(1)::after {
+    display: block;
+    padding: 0.5em;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+main section article:nth-child(3) {
+    position: relative;
+    transition: all 2s;
+}
+
+main section article:nth-child(3)::after {
+    content: "R";
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+main section:hover article:nth-child(3)::after {
+    display: block;
+    padding: 0.5em;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+main section article:nth-child(5) {
+    position: relative;
+    transition: all 2s;
+}
+
+main section article:nth-child(5)::after {
+    content: "D";
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+main section:hover article:nth-child(5)::after {
+    display: block;
+    padding: 0.5em;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+main section article:nth-child(2) {
+    position: relative;
+    transition: all 2s;
+}
+
+main section article:nth-child(2)::after {
+    content: "O";
+    position: absolute;
+    background-color: black;
+    top: -100%;
+    left: 0;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+main section:hover article:nth-child(2)::after {
+    display: block;
+    padding: 0.5em;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+main section article:nth-child(4) {
+    position: relative;
+    transition: all 2s;
+}
+
+main section article:nth-child(4)::after {
+    content: "L";
+    position: absolute;
+    background-color: black;
+    top: -100%;
+    left: 0;
+    padding: 0.5em;
+    transition: all 1s;
+}
+
+main section:hover article:nth-child(4)::after {
+    display: block;
+    padding: 0.5em;
+    padding-right: 0.8em;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
